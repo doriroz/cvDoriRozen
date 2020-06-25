@@ -1,40 +1,4 @@
-  // $(document).ready(function(){
-    //   $(".circle").hover(function(){
-    //   // if mouse hover then add .flipping class
-    //     $(this).addClass("flipping");
-    
-    //   },function(){
-    //   // if mouse unhover then remove the .flipping class
-    //     $(this).removeClass("flipping");
-    //   });
-    // });
-
-    // $(document).ready(function(){
-    //   $(".circle").click(function(){
-    //   // if mouse hover then add .flipping class
-    //     $(this).addClass("flipping");
-    
-    //   },function(){
-    //   // if mouse unhover then remove the .flipping class
-    //     $(this).removeClass("flipping");
-    //   });
-    // });
-
-    // window.onload = function(){
-    //   var cr = document.querySelector(".circle");
-    //     console.log(cr.classList);
-    //     cr.classList.toggle("flipping",true);
-    // }
-    
-    // $("click").click(function(){
-    //   $this.addClass("flipping");
-    // })
-
-    // function addClassClick(){
-    //   $(button).addClass("flipping");
-    // }
-    
-    function readProf(){
+        function readProf(){
         var ddd = document.getElementById("ddd");        
         ddd.classList.add("flipping");
     }
@@ -73,4 +37,18 @@
         console.log(cr.classList);
         //cr.classList.toggle("flipping",true);
         cr.classList.remove("flipping"); 
+    }
+
+    function mrItem(){
+        var k = document.querySelector("#know .back");
+        k.style.display = "none";
+         var v = document.getElementsByClassName("backGrw");
+         v[0].style.display = "block";
+    }
+
+    function bckNrm(){
+            var v = document.getElementsByClassName("backGrw");
+            v[0].style.display = "none";
+            var bg = document.querySelector("#know .back");
+            bg.style.display = "block";
     }
